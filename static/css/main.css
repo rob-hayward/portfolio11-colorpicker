@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.color-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.color-box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    position: relative;
+}
+
+.hex-code {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: #fff;
+    font-size: 14px;
+    text-shadow: 1px 1px 1px #000;
+}

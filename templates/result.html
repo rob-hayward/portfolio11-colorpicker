@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Extractor Results</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+    <h1>Top 10 Colors</h1>
+    {% if colors %}
+    <div class="color-grid">
+        {% for color in colors %}
+            <div class="color-box" style="background-color: {{ color }};">
+                <span class="hex-code">{{ color }}</span>
+            </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <p>No colors were found.</p>
+    {% endif %}
+    <a href="{{ url_for('index') }}">Try another image</a>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
